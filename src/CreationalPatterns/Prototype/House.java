@@ -16,7 +16,7 @@ public class House implements Prototype {
     }
 
     @Override
-    public House clone() {
-        return new House(technology, area, price);
+    public Prototype clone() {
+        return new House(this.technology, this.area, this.price);
     }
 }
