@@ -5,6 +5,12 @@ public class House {
     private int area;
     private int price;
 
+    public House() {
+        technology = "default";
+        area = -1;
+        price = -1;
+    }
+
     public void setTechnology(String technology) {
         this.technology = technology;
     }

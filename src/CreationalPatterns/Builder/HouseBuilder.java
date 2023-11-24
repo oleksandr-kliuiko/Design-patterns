@@ -1,8 +1,8 @@
 package CreationalPatterns.Builder;
 
 public interface HouseBuilder {
-    void buildTechnology();
-    void buildArea();
-    void BuildPrice();
-    House buildResult();
+    HouseBuilder buildTechnology(String technology);
+    HouseBuilder buildArea(int area);
+    HouseBuilder buildPrice(int price);
+    House build();
 }

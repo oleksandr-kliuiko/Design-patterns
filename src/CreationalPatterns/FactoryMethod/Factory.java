@@ -1,10 +1,10 @@
 package CreationalPatterns.FactoryMethod;
 
 public class Factory {
-    public Transport create(String type) {
+    public Order create(String type) {
         switch (type) {
-            case "truck": return new Truck();
-            case "ship": return new Ship();
+            case "telephone": return new TelephoneOrder();
+            case "online": return new OnlineOrder();
             default: throw new RuntimeException(type + " type does not exist");
         }
     }
